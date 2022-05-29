@@ -7,6 +7,9 @@ categories: bash
 
 ### Find only files
 
-```
-find ./ -type f
-```
+    find ./ -type f
+
+### Move current folder files to subdirectory
+
+    mkdir -p subd
+    find . -type f -maxdepth 1 -exec mv {} ./subd/ \;
